@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import {BikeService} from "./forms/form-layouts/bike.service";
 
 const routes: Routes = [{
   path: '',
@@ -41,6 +42,7 @@ const routes: Routes = [{
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
+  providers: [BikeService],
 })
 export class PagesRoutingModule {
 }
